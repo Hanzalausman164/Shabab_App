@@ -50,7 +50,7 @@ class _ParkReportScreenState extends State<ParkReportScreen> {
             const SizedBox(height: 16),
             Row(
               children: [
-                Expanded(child: StatPill(value: '${groups.length}', label: 'Groups', icon: Icons.groups_2_rounded, color: AppColors.roleParkAdmin)),
+                Expanded(child: StatPill(value: '${groups.length}', label: 'Groups', icon: Icons.groups_2_rounded, color: AppColors.roleHeadMurabbi)),
                 const SizedBox(width: 12),
                 Expanded(child: StatPill(value: '$totalMembers', label: 'Total Shabab', icon: Icons.groups_rounded, color: isDark ? AppColors.infoDark : AppColors.infoLight)),
                 const SizedBox(width: 12),

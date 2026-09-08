@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
 import '../theme/app_colors.dart';
 
-enum UserRole { murabbi, parkAdmin, cityMasul }
+enum UserRole { murabbi, headMurabbi, cityMasul }
 
 extension UserRoleX on UserRole {
   String get label => switch (this) {
         UserRole.murabbi => 'Murabbi',
-        UserRole.parkAdmin => 'Park Admin',
+        UserRole.headMurabbi => 'Head Murabbi',
         UserRole.cityMasul => 'City / IT Masul',
       };
 
   Color get color => switch (this) {
         UserRole.murabbi => AppColors.roleMurabbi,
-        UserRole.parkAdmin => AppColors.roleParkAdmin,
+        UserRole.headMurabbi => AppColors.roleHeadMurabbi,
         UserRole.cityMasul => AppColors.roleCityMasul,
       };
 }
 
-/// A logged-in account. A Park Admin can also be a Murabbi of their own
+/// A logged-in account. A Head Murabbi can also be a Murabbi of their own
 /// group ([ownGroupId] set), matching the real-world flow.
 class AppUser {
   final String id;
@@ -47,14 +47,14 @@ class ParkInfo {
   final String id;
   final String name;
   final String headMurabbiName;
-  final List<String> parkAdminNames;
+  final List<String> headMurabbiNames;
   final List<String> groupIds;
 
   const ParkInfo({
     required this.id,
     required this.name,
     required this.headMurabbiName,
-    required this.parkAdminNames,
+    required this.headMurabbiNames,
     required this.groupIds,
   });
 }

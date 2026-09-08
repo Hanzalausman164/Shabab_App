@@ -69,7 +69,7 @@ class AppState extends ChangeNotifier {
 
   int totalMembers(String groupId) => MockData.membersForGroup(groupId).length;
 
-  // ---------------- Murabbeen attendance (Park Admin marking murabbis) ----------------
+  // ---------------- Murabbeen attendance (Head Murabbi marking murabbis) ----------------
   final Map<String, Map<String, AttendanceStatus>> _murabbeenAttendance = {};
 
   String _murabbeenKey(String parkId, String date) => 'murabbeen|$parkId|$date';

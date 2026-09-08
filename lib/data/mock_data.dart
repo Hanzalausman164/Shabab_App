@@ -10,42 +10,42 @@ class MockData {
       id: 'park_e11',
       name: 'E-11 Iqbal Park',
       headMurabbiName: 'Hanzala Usman',
-      parkAdminNames: ['Hanzala Usman', 'Usama Bilal'],
+      headMurabbiNames: ['Hanzala Usman', 'Usama Bilal'],
       groupIds: ['grp_a', 'grp_b'],
     ),
     const ParkInfo(
       id: 'park_f10',
       name: 'F-10 Fatima Park',
       headMurabbiName: 'Ahmad Raza',
-      parkAdminNames: ['Ahmad Raza'],
+      headMurabbiNames: ['Ahmad Raza'],
       groupIds: ['grp_c', 'grp_d'],
     ),
     const ParkInfo(
       id: 'park_g9',
       name: 'G-9 Margalla Park',
       headMurabbiName: 'Bilal Tariq',
-      parkAdminNames: ['Bilal Tariq'],
+      headMurabbiNames: ['Bilal Tariq'],
       groupIds: ['grp_e'],
     ),
     const ParkInfo(
       id: 'park_g11',
       name: 'G-11 Jinnah Park',
       headMurabbiName: 'Zubair Qureshi',
-      parkAdminNames: ['Zubair Qureshi'],
+      headMurabbiNames: ['Zubair Qureshi'],
       groupIds: ['grp_f'],
     ),
     const ParkInfo(
       id: 'park_i10',
       name: 'I-10 Islamabad Park',
       headMurabbiName: 'Usama Bin Tariq',
-      parkAdminNames: ['Usama Bin Tariq'],
+      headMurabbiNames: ['Usama Bin Tariq'],
       groupIds: ['grp_g'],
     ),
     const ParkInfo(
       id: 'park_i12',
       name: 'I-12 Liaqat Park',
       headMurabbiName: 'Hafiz Bilal Ahmed',
-      parkAdminNames: ['Hafiz Bilal Ahmed'],
+      headMurabbiNames: ['Hafiz Bilal Ahmed'],
       groupIds: ['grp_h'],
     ),
   ];
@@ -76,7 +76,7 @@ class MockData {
   /// that returns the user + role for the given phone number / login id.
   static final List<AppUser> users = [
     const AppUser(id: 'u_murabbi_1', name: 'Muhammad Hanzala Usman', phone: '0300 1112223', role: UserRole.murabbi, parkId: 'park_e11', ownGroupId: 'grp_a'),
-    const AppUser(id: 'u_parkadmin_1', name: 'Hanzala Usman', phone: '0300 2223334', role: UserRole.parkAdmin, parkId: 'park_e11', ownGroupId: 'grp_a'),
+    const AppUser(id: 'u_parkadmin_1', name: 'Hanzala Usman', phone: '0300 2223334', role: UserRole.headMurabbi, parkId: 'park_e11', ownGroupId: 'grp_a'),
     const AppUser(id: 'u_citymasul_1', name: 'Ahmad Raza', phone: '0300 3334445', role: UserRole.cityMasul, parkId: 'park_f10'),
   ];
 

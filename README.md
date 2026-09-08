@@ -21,7 +21,7 @@ The login screen has tap-to-fill buttons for these three accounts:
 | Role | Phone |
 |---|---|
 | Murabbi | 0300 1112223 |
-| Park Admin (also a Murabbi) | 0300 2223334 |
+| Head Murabbi (also a Murabbi) | 0300 2223334 |
 | City / IT Masul | 0300 3334445 |
 
 Password field is prefilled and not actually checked (mock auth) — just tap
@@ -41,7 +41,7 @@ backend.
 - **One home-header layout** (`HomeGreetingHeader`) shared by all three
   roles — avatar, greeting, role badge, date, theme toggle.
 - **One mark-attendance flow** (`MarkAttendanceScreen`) reused for: Murabbi's
-  own group, Park Admin's own group, Mark Murabbeen, and the "tap an
+  own group, Head Murabbi's own group, Mark Murabbeen, and the "tap an
   unmarked group" shortcut from All Groups Status — instead of four
   near-duplicate screens.
 

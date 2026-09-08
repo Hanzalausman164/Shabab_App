@@ -64,6 +64,6 @@ class AppColors {
 
   // Role badge tints — used consistently across all three home screens.
   static const Color roleMurabbi = Color(0xFF3B82F6);
-  static const Color roleParkAdmin = Color(0xFFB4519E);
+  static const Color roleHeadMurabbi = Color(0xFFB4519E);
   static const Color roleCityMasul = Color(0xFFE31B23);
 }

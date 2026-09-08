@@ -46,7 +46,7 @@ class ParkDetailScreen extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(height: 22),
-                    // ---- MANAGEMENT: head murabbi, park admins, murabbis ----
+                    // ---- MANAGEMENT: head murabbis, murabbis ----
                     _SectionLabel(
                       icon: Icons.shield_rounded,
                       label: 'PARK MANAGEMENT',
@@ -54,14 +54,14 @@ class ParkDetailScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 10),
                     _managementRow(context, theme, isDark, 'Head Murabbi', park.headMurabbiName, murabbeenStatuses['head_$parkId']),
-                    ...park.parkAdminNames.asMap().entries.map(
+                    ...park.headMurabbiNames.asMap().entries.map(
                           (e) => Padding(
                             padding: const EdgeInsets.only(top: 10),
                             child: _managementRow(
                               context,
                               theme,
                               isDark,
-                              'Park Admin',
+                              'Head Murabbi',
                               e.value,
                               murabbeenStatuses['admin_${parkId}_${e.key}'],
                             ),

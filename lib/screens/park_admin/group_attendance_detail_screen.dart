@@ -9,7 +9,7 @@ import '../../widgets/common_widgets.dart';
 import '../shared/mark_attendance_screen.dart';
 
 /// Shows the attendance a murabbi has already marked for their group.
-/// A small "Edit" button lets the Park Admin correct it — this is the
+/// A small "Edit" button lets the Head Murabbi correct it — this is the
 /// screen that opens when tapping a MARKED tab in All Groups Status.
 class GroupAttendanceDetailScreen extends StatelessWidget {
   final String groupId;

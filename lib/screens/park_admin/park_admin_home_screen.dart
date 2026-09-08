@@ -8,9 +8,9 @@ import '../../widgets/common_widgets.dart';
 import '../shared/mark_attendance_screen.dart';
 import 'registration_screen.dart';
 
-class ParkAdminHomeScreen extends StatelessWidget {
+class HeadMurabbiHomeScreen extends StatelessWidget {
   final void Function(int tabIndex) onNavigate;
-  const ParkAdminHomeScreen({super.key, required this.onNavigate});
+  const HeadMurabbiHomeScreen({super.key, required this.onNavigate});
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +35,7 @@ class ParkAdminHomeScreen extends StatelessWidget {
             const SizedBox(height: 22),
             Row(
               children: [
-                Expanded(child: StatPill(value: park.name.split(' ').first, label: park.name, icon: Icons.park_rounded, color: AppColors.roleParkAdmin)),
+                Expanded(child: StatPill(value: park.name.split(' ').first, label: park.name, icon: Icons.park_rounded, color: AppColors.roleHeadMurabbi)),
                 const SizedBox(width: 12),
                 Expanded(child: StatPill(value: '$markedGroups/${groups.length}', label: 'Groups Marked', icon: Icons.groups_2_rounded, color: isDark ? AppColors.successDark : AppColors.successLight)),
                 const SizedBox(width: 12),
@@ -48,7 +48,7 @@ class ParkAdminHomeScreen extends StatelessWidget {
               icon: Icons.how_to_reg_rounded,
               title: 'Mark Murabbeen Attendance',
               subtitle: 'Record which murabbis are present today',
-              color: AppColors.roleParkAdmin,
+              color: AppColors.roleHeadMurabbi,
               onTap: () => _openMurabbeen(context, appState, park.id),
             ),
             const SizedBox(height: 12),

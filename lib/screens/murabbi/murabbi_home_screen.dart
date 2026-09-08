@@ -61,6 +61,9 @@ class MurabbiHomeScreen extends StatelessWidget {
                     onPressed: () => _openMark(context, appState, groupId, members),
                     icon: Icon(marked ? Icons.edit_rounded : Icons.check_circle_outline_rounded, size: 18),
                     label: Text(marked ? 'Edit Attendance' : 'Mark Now'),
+                    style: ElevatedButton.styleFrom(
+                      padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 12),
+                    ),
                   ),
                 ],
               ),

@@ -16,7 +16,7 @@ class RoleRouter extends StatelessWidget {
     if (user == null) return const LoginScreen();
     return switch (user.role) {
       UserRole.murabbi => const MurabbiShell(),
-      UserRole.parkAdmin => const ParkAdminShell(),
+      UserRole.headMurabbi => const HeadMurabbiShell(),
       UserRole.cityMasul => const CityMasulShell(),
     };
   }

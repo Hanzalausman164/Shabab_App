@@ -4,14 +4,14 @@ import 'park_admin_home_screen.dart';
 import 'park_report_screen.dart';
 import '../shared/profile_settings_screen.dart';
 
-class ParkAdminShell extends StatefulWidget {
-  const ParkAdminShell({super.key});
+class HeadMurabbiShell extends StatefulWidget {
+  const HeadMurabbiShell({super.key});
 
   @override
-  State<ParkAdminShell> createState() => _ParkAdminShellState();
+  State<HeadMurabbiShell> createState() => _HeadMurabbiShellState();
 }
 
-class _ParkAdminShellState extends State<ParkAdminShell> {
+class _HeadMurabbiShellState extends State<HeadMurabbiShell> {
   int _index = 0;
 
   void _go(int i) => setState(() => _index = i);
@@ -19,7 +19,7 @@ class _ParkAdminShellState extends State<ParkAdminShell> {
   @override
   Widget build(BuildContext context) {
     final pages = [
-      ParkAdminHomeScreen(onNavigate: _go),
+      HeadMurabbiHomeScreen(onNavigate: _go),
       const AllGroupsStatusScreen(),
       const ParkReportScreen(),
       const ProfileSettingsScreen(),

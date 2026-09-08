@@ -14,8 +14,8 @@ class AttendanceEntry {
 
 /// Reusable "mark attendance" screen: a header, a scrollable list of people
 /// each with a 4-way status selector, a live summary row, and a Save button.
-/// Used for: Murabbi marking their own group, Park Admin marking their own
-/// group, Park Admin marking Murabbeen, and Park Admin editing/opening an
+/// Used for: Murabbi marking their own group, Head Murabbi marking their own
+/// group, Head Murabbi marking Murabbeen, and Head Murabbi editing/opening an
 /// unmarked group from the All Groups Status screen.
 class MarkAttendanceScreen extends StatefulWidget {
   final String title;
